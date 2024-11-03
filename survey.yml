@@ -4,6 +4,9 @@
     This is the sphinx usage survey for 2024, we'd like to understand the main reason you do (not) use sphinx.
     You can help us improve this survey by submitting a PR to the file that deinfe this survey on GitHub <URL>.
     And will be able to find the result in the repository at a later date.
+- title: 'Demographics'
+  description: "In this first section, we'd like to know a bit about you, to know who we are adressing to, and whether we are inclusive enough. Feel free to skip questions."
+  type: statement
 - title: 'What is your age range'
   choices: 
    - '<15'
@@ -30,17 +33,16 @@
   choices:
      - full-time
      - hobbyist
-- title: 'In whcih context do you use sphinx'
-  multiple: true
-  choices:
-     - 'full-time projects'
-     - 'hobby projects'
-- title: 'How many year of Python experience you have'
-  type: number
-  
 
-- title: 'What documentation engines do you use?'
-  description: 'You can select multiple options, if you also select other, please specifiy as a comma separated list. '
+- title: 'How many year of Python experience you have ?'
+  type: number
+
+- title: 'About how you write your doc in general'
+  type: statement
+  description: 'a short section on how you write docs, even when not using sphinx.'
+
+- title: 'What documentation engines do you use ?'
+  description: 'You can select multiple options, if you also select other, please specifiy as a comma separated list in "other".'
   multiple: true
   other: true
   choices:
@@ -50,30 +52,44 @@
     - JupyterBook
     - Sphinx
     - None
-- title: 'What markup language are you using in your narrative documentation?'
+- title: 'If you use Sphinx, In which context do you use sphinx ?'
+  multiple: true
+  choices:
+     - 'full-time projects'
+     - 'hobby projects'
+     - "I don't use Sphinx"
+- title: 'What markup language(s) are you using in your narrative documentation ?'
   other: true
   multiple: true
   choices:
    - Markdown
    - RST    
-- title: 'Do you write documentations in your native native language ?'
+- title: 'Do you write documentations in your native  language ?'
   choices:
     - 'Yes'
     - 'No'
-
-- title: 'Do you write documentatin in a foreing language ?'
+- title: 'Do you write documentatin in a foreign language ?'
   choices:
      - 'Yes'
      - 'No'
-- title: 'In which Language do you write your docs?'
+- title: 'In which Language(s) do you write your docs?'
+  description: 'We included some of the most spoken languages for convenience, please list other languages in the "other" field, comma separated'
   other: true
   multiple: true
   choices:
      - English
+     - Mandarin Chinese
+     - Modern Standard Arabic
+     - Hindi
      - French
      - Spanish
-- title: What are your professional role/role in the project(s) that are using sphinx ?
+     - Japanese
+     - Bengali
+     - Portugese
+     - Russian
+- title: What are your professional role(s) in the project(s) which are using sphinx ?
   other: true
+  multiple: true
   choices:
      - Developer
      - data scientist
@@ -88,21 +104,34 @@
      - Scientific Python
      - infrastructure
      - Other (precise)
-- title: What theme(s) do you use?
+- title: The following section is about sphinx specifically.
+  type: statement
+- title: What theme(s) do you use with sphinx?
   multiple: true
   other: true
-  description: 'comma separated list in other if relevant.'
+  description: 'Comma separated list in other if relevant.'
   choices:
      - Whatever comes with sphinx by default
      - Alabaster
      - Readthedocs
-     - Pydata Sphinx There
+     - Pydata Sphinx Theme
      - Material design
+- title: What extensions do you use with sphinx >
+  multiple: true
+  description: 'List comma seprated extension in other if relevant'
+  choices:
+   - numpydoc
+   - autodoc
+   - intersphinx
+   - mathjax
+   - ifconfig
+   
 - title: Rate your issues with sphinx concerning *RST*
   description: RST syntax is too complicated
   type: opinion_scale
   labels:
-    - syntax is ok
+    - syntax is great
+    - Just right
     - syntax is too complicated
 - title: Rate your issues with sphinx concerning *missing features*
   description: Sphinx is missing features
@@ -122,6 +151,7 @@
   labels:
     - Sphinx is stable
     - Sphinx breaks/changes too often.
+
 - title: Rate your issues with sphinx concerning *Sphinx itself*
   description: Sphinx is too complex to use
   type: opinion_scale
@@ -132,6 +162,7 @@
   description: |
       in the previous questions we asked you about sphinx RST syntax, missing features, performance,
       stability, and complexity. You can describe your various issues more in depth here. 
+  type: long_text
 - title: What output formats do you use the most?
   multiple: true
   other: true

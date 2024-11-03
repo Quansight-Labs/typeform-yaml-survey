@@ -1,0 +1,152 @@
+- title: 'Sphinx Usage survey 2024'
+  type: statement
+  description: | 
+    This is the sphinx usage survey for 2024, we'd like to understand the main reason you do (not) use sphinx.
+    You can help us improve this survey by submitting a PR to the file that deinfe this survey on GitHub <URL>.
+    And will be able to find the result in the repository at a later date.
+- title: 'What is your age range'
+  choices: 
+   - '<15'
+   - '15-25'
+   - '26-35'
+   - '36-45'
+   - '45-55'
+   - '56-65'
+   - '65+'
+- title: 'Which gender do you indentify as'
+  description: 'You can edit the value in Other.'
+  other: true
+  choices: 
+   - 'Male'
+   - 'Female'
+- title: 'Do you consider youself as working as part of a team or independant ?'
+  description: 'You can select both if both apply'
+  multiple: true
+  choices:
+    - Part of team
+    - Independant
+- title: 'Do you consider yourself full-time or hobbyist?'
+  description: 'That is to say do you mainly code in Python, or one a few hours here and there ?'
+  choices:
+     - full-time
+     - hobbyist
+- title: 'In whcih context do you use sphinx'
+  multiple: true
+  choices:
+     - 'full-time projects'
+     - 'hobby projects'
+- title: 'How many year of Python experience you have'
+  type: number
+  
+
+- title: 'What documentation engines do you use?'
+  description: 'You can select multiple options, if you also select other, please specifiy as a comma separated list. '
+  multiple: true
+  other: true
+  choices:
+    - MyST
+    - Docusaurus
+    - Mkdocs
+    - JupyterBook
+    - Sphinx
+    - None
+- title: 'What markup language are you using in your narrative documentation?'
+  other: true
+  multiple: true
+  choices:
+   - Markdown
+   - RST    
+- title: 'Do you write documentations in your native native language ?'
+  choices:
+    - 'Yes'
+    - 'No'
+
+- title: 'Do you write documentatin in a foreing language ?'
+  choices:
+     - 'Yes'
+     - 'No'
+- title: 'In which Language do you write your docs?'
+  other: true
+  multiple: true
+  choices:
+     - English
+     - French
+     - Spanish
+- title: What are your professional role/role in the project(s) that are using sphinx ?
+  other: true
+  choices:
+     - Developer
+     - data scientist
+     - Educator
+     - technical writer
+     - community manager
+     - testing engineer
+- title: In which Python ecosystem do you fit better 
+  choices:
+     - DataScience
+     - Web
+     - Scientific Python
+     - infrastructure
+     - Other (precise)
+- title: What theme(s) do you use?
+  multiple: true
+  other: true
+  description: 'comma separated list in other if relevant.'
+  choices:
+     - Whatever comes with sphinx by default
+     - Alabaster
+     - Readthedocs
+     - Pydata Sphinx There
+     - Material design
+- title: Rate your issues with sphinx concerning *RST*
+  description: RST syntax is too complicated
+  type: opinion_scale
+  labels:
+    - syntax is ok
+    - syntax is too complicated
+- title: Rate your issues with sphinx concerning *missing features*
+  description: Sphinx is missing features
+  type: opinion_scale
+  labels:
+    - I have all the features I need
+    - Too many things are missing
+- title: Rate your issues with sphinx concerning *Performances*
+  description: Sphinx is not fast enough, or use too much resources
+  type: opinion_scale
+  labels:
+    - Sphinx is fast for my project
+    - Sphinx is way too slow.
+- title: Rate your issues with sphinx concerning *Stability*
+  description: Sphinx API changes too often/too many bugs
+  type: opinion_scale
+  labels:
+    - Sphinx is stable
+    - Sphinx breaks/changes too often.
+- title: Rate your issues with sphinx concerning *Sphinx itself*
+  description: Sphinx is too complex to use
+  type: opinion_scale
+  labels:
+    - Sphinx is easy to use/configure and works out of the box.
+    - Sooo complicated.
+- title: Are you missing anything from sphinx >
+  description: |
+      in the previous questions we asked you about sphinx RST syntax, missing features, performance,
+      stability, and complexity. You can describe your various issues more in depth here. 
+- title: What output formats do you use the most?
+  multiple: true
+  other: true
+  choices:
+    - Html
+    - Pdf
+    - Epub
+
+- title: What output formats do you do without?
+  multiple: true
+  other: true
+  choices:
+    - Html
+    - Pdf
+    - Epub
+
+
+

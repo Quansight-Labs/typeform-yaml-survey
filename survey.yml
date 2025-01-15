@@ -118,7 +118,7 @@
      - Material design
 - title: What extensions do you use with sphinx >
   multiple: true
-  description: 'List comma seprated extension in other if relevant'
+  description: 'List comma separated extension in other if relevant'
   choices:
    - numpydoc
    - autodoc

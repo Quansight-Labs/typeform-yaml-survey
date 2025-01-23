@@ -138,10 +138,10 @@
 - title: 'If you aren’t using Sphinx for your documentation, please explain why you chose the one you are using'
   type: long_text
   
-- 'How many years have you been using Sphinx?'
+- title: 'How many years have you been using Sphinx?'
   type: number
 
-title: 'What is the main reason you use Sphinx?'
+- title: 'What is the main reason you use Sphinx?'
   other: true
   choices:
     - 'Python API documentation generation (docstrings)'
@@ -183,14 +183,14 @@ title: 'What is the main reason you use Sphinx?'
   - 'Material design'
   - 'I don’t know'
 
-title: 'What Sphinx output formats do you use the most?'
+- title: 'What Sphinx output formats do you use the most?'
   other: true
   choices:
     - 'HTML'
     - 'PDF'
     - 'EPUB'
 
-title: 'How comfortable do you feel when working with docutils?'
+- title: 'How comfortable do you feel when working with docutils?'
   choices: 
     - 'Very comfortable'
     - 'Comfortable'
@@ -198,10 +198,10 @@ title: 'How comfortable do you feel when working with docutils?'
     - 'Uncomfortable'
     - 'Very uncomfortable'
 
-title: 'What is the biggest challenge you face when searching for documentation on Sphinx internals?'
+- title: 'What is the biggest challenge you face when searching for documentation on Sphinx internals?'
   type: long_text
 
-title: 'Please rank the issues you face when working with Sphinx from 1 (least important) to 5 (most important).'
+- title: 'Please rank the issues you face when working with Sphinx from 1 (least important) to 5 (most important).'
   type: ranking
     - 'RST syntax is too complicated 1–5'
     - 'Sphinx is missing features I want 1–5'
@@ -209,8 +209,8 @@ title: 'Please rank the issues you face when working with Sphinx from 1 (least i
     - 'Sphinx breaks too often 1–5'
     - 'No native support for Markdown 1–5'
 
-title: 'Are there any other issues you face when working with Sphinx?'
+- title: 'Are there any other issues you face when working with Sphinx?'
   type: long_text
 
-title: 'If there are any features you wish Sphinx had, what would they be?'
+- title: 'If there are any features you wish Sphinx had, what would they be?'
   type: long_text

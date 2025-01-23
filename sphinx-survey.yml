@@ -34,7 +34,7 @@
     - 'Prefer not to answer'
     - 'Other'
 
-- title: 'How many years have you been using Python?'
+- title: 'How many years have you been using Python for?'
   type: number
 
 - title: 'Which Python ecosystem do you feel most aligned with? Select all that apply.'
@@ -47,7 +47,7 @@
     -  'Prefer not to answer'
     - 'Other'
 
-- title: 'How many years have you been using documentation tools?'
+- title: 'For how many years have you been using documentation tools?'
   type: number
 
 - title: 'In which of the following contexts do you use documentation tools? Select all that apply.'
@@ -100,7 +100,7 @@
     - 'RST'
     - 'I don’t know'
 
-- title: 'What markup language are you using in your docstrings?'
+- title: 'If the programing language you are using supports docstrings, what markup language are you using in your docstrings?'
   multiple: true
   other: true
   choices: 
@@ -181,7 +181,7 @@
   - 'Read The Docs'
   - 'Pydata Sphinx Theme'
   - 'Material design'
-  - 'I don’t know'
+  - 'Something else/I don’t know'
 
 - title: 'What Sphinx output formats do you use the most?'
   other: true

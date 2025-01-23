@@ -69,7 +69,7 @@
     - 'Community manager'
     - 'Testing engineer'
     - 'Extension developer/maintainer'
-    - 'Other'
+    - '::other_please_type::'
 
 - title: 'What documentation engines do you use? Select all that apply.'
   multiple: true
@@ -203,6 +203,7 @@
 
 - title: 'Please rank the issues you face when working with Sphinx from 1 (least important) to 5 (most important).'
   type: ranking
+  choices:
     - 'RST syntax is too complicated 1–5'
     - 'Sphinx is missing features I want 1–5'
     - 'Performance issues 1–5'

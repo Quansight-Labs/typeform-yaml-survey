@@ -159,13 +159,13 @@
   multiple: true
   other: true
   choices:
-    - 'I do follow Sphinx release plans by following social media'
+    - 'I do follow Sphinx release plans by following the Sphinx repository on GitHub'
     - 'I do follow Sphinx release plans by managing Sphinx versions'
     - 'I do follow Sphinx release plans by setting up CI runs for pre-releases'
     - 'I don’t follow Sphinx release plans'
     - 'Prefer not to answer'
 
-- title: 'Does your project use custom Sphinx extensions? If so, which ones?'
+- title: 'Does your project use custom Sphinx extensions?'
   choices:
     - 'My project is a custom Sphinx extension(s)'
     - 'No, my project does not use custom Sphinx extensions'
@@ -197,6 +197,7 @@
     - 'Neutral'
     - 'Uncomfortable'
     - 'Very uncomfortable'
+    - 'I don't know or don't work with docutils'
 
 - title: 'What is the biggest challenge you face when searching for documentation on Sphinx internals?'
   type: long_text

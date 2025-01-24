@@ -7,13 +7,14 @@
     
     Results will be public with identifying information removed. Open text field questions may be quoted, but will not be shown in full. 
     
-    This survey is run by the Sphinx community; survey data will be deleted from any private accounts once made public. If you have any questions, reach out to _____.
+    This survey is run by the Sphinx community; survey data will be deleted from any private accounts once made public. If you have any questions, reach out to [Contact to be determined].
 
 - title: 'Tell us about you'
   description: "First, we'd like to know about how you work and what tools you use."
   type: statement
 
 - title: 'Which of the following roles is closest to your job?'
+  other: true
   choices: 
     - 'Academic researcher'
     - 'Data scientist'
@@ -24,43 +25,43 @@
     - 'Technical support'
     - 'Technical writer'
     - 'Prefer not to answer'
-    - 'Other'
 
 - title: 'Do you most often work on a team or independently?'
+  other: true  
   choices: 
     - 'I most often work on projects independently'
     - 'I most often work on projects as part of a team'
     - 'I spend about equal time working on projects independently as I do on a team'
     - 'Prefer not to answer'
-    - 'Other'
 
 - title: 'How many years have you been using Python for?'
   type: number
 
 - title: 'Which Python ecosystem do you feel most aligned with? Select all that apply.'
   multiple: true
+  other: true
   choices: 
     - 'Data Science'
     - 'Web'
     - 'Scientific Python'
     - 'Infrastructure'
     -  'Prefer not to answer'
-    - 'Other'
 
 - title: 'For how many years have you been using documentation tools?'
   type: number
 
 - title: 'In which of the following contexts do you use documentation tools? Select all that apply.'
   multiple: true
+  other: true
   choices: 
     - 'As a part of my full-time job'
     - 'As a part of my part-time, contract, or other employment'
     - 'As a part of a side or non-paid project'
     - 'I do not use documentation tools'
-    - 'Other'
 
 - title: 'How would you identify your role in your documentation-related projects? Select all that apply.'
   multiple: true
+  other: true
   choices:
     - 'Developer'
     - 'Data scientist'
@@ -69,7 +70,6 @@
     - 'Community manager'
     - 'Testing engineer'
     - 'Extension developer/maintainer'
-    - '::other_please_type::'
 
 - title: 'What documentation engines do you use? Select all that apply.'
   multiple: true

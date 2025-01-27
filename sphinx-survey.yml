@@ -205,11 +205,11 @@
 - title: 'Please rank the issues you face when working with Sphinx from 1 (least important) to 5 (most important).'
   type: ranking
   choices:
-    - 'RST syntax is too complicated 1–5'
-    - 'Sphinx is missing features I want 1–5'
-    - 'Performance issues 1–5'
-    - 'Sphinx breaks too often 1–5'
-    - 'No native support for Markdown 1–5'
+    - 'RST syntax is too complicated'
+    - 'Sphinx is missing features I want'
+    - 'Performance issues'
+    - 'Sphinx breaks too often'
+    - 'No native support for Markdown'
 
 - title: 'Are there any other issues you face when working with Sphinx?'
   type: long_text

@@ -39,20 +39,21 @@ questions:
   - title: 'How many years have you been using Python for?'
     type: number
 
-  - title: 'Which Python ecosystem do you feel most aligned with? Select all that apply.'
+  - title: 'Which Python ecosystem do you feel most aligned with?'
     multiple: true
     other: true
     choices:
       - 'Data Science'
+      - 'Machine Learning'
       - 'Web'
       - 'Scientific Python'
       - 'Infrastructure'
-      -  'Prefer not to answer'
+      - 'Prefer not to answer'
 
   - title: 'For how many years have you been using documentation tools?'
     type: number
 
-  - title: 'In which of the following contexts do you use documentation tools? Select all that apply.'
+  - title: 'In which of the following contexts do you use documentation tools?'
     multiple: true
     other: true
     choices:
@@ -61,10 +62,12 @@ questions:
       - 'As a part of a side or non-paid project'
       - 'I do not use documentation tools'
 
-  - title: 'How would you identify your role in your documentation-related projects? Select all that apply.'
+  - title: 'How would you identify your role in your documentation-related projects?'
+    description: 'Select all that apply'
     multiple: true
     other: true
     choices:
+      - 'Designer'
       - 'Developer'
       - 'Data scientist'
       - 'Educator'
@@ -73,7 +76,7 @@ questions:
       - 'Testing engineer'
       - 'Extension developer/maintainer'
 
-  - title: 'What documentation engines do you use? Select all that apply.'
+  - title: 'What documentation engines do you use?'
     multiple: true
     other: true
     choices:
@@ -102,13 +105,16 @@ questions:
       - 'RST'
       - 'I don’t know'
 
-  - title: 'If the programing language you are using supports docstrings, what markup language are you using in your docstrings?'
+  - title: 'What markup language are you using in your docstrings?'
     multiple: true
     other: true
     choices:
       - 'Markdown'
       - 'RST'
+      - 'Numpydoc format'
+      - 'Google format'
       - 'I don’t know'
+
 
   - title: 'Which of the following is most important to you in a documentation site?'
     multiple: true
@@ -136,8 +142,10 @@ questions:
     choices:
       - 'Yes'
       - 'No'
+      - "TODO: matthias write a jump to the end if they reply no."
 
   - title: 'If you aren’t using Sphinx for your documentation, please explain why you chose the one you are using'
+    matthias: try to put that at the end if peole have answerd no.
     type: long_text
 
   - title: 'How many years have you been using Sphinx?'
@@ -158,11 +166,12 @@ questions:
       - 'Sphinx’s release schedule'
 
   - title: 'Do you follow Sphinx release plans? If so, how? Select all that apply.'
+    matthias: "TODO understand this question and see with melissa."
     multiple: true
     other: true
     choices:
       - 'I do follow Sphinx release plans by following the Sphinx repository on GitHub'
-      - 'I do follow Sphinx release plans by managing Sphinx versions'
+      - 'I do follow Sphinx release plans by pinning Sphinx versions'
       - 'I do follow Sphinx release plans by setting up CI runs for pre-releases'
       - 'I don’t follow Sphinx release plans'
       - 'Prefer not to answer'
@@ -185,7 +194,8 @@ questions:
     - 'Material design'
     - 'Something else/I don’t know'
 
-  - title: 'What Sphinx output formats do you use the most?'
+  - title: 'In which formats do you publish your documentation with sphinx?'
+    multiple: true
     other: true
     choices:
       - 'HTML'
@@ -204,7 +214,8 @@ questions:
   - title: 'What is the biggest challenge you face when searching for documentation on Sphinx internals?'
     type: long_text
 
-  - title: 'Please rank the issues you face when working with Sphinx from 1 (least important) to 5 (most important).'
+  - title: 'Please rank the issues you face when working with Sphinx from 1 (most important, I wish this was fixed yesterday) to 5 (least important, this can wait).'
+    description : "That is to say, the issues you'd like to be fixed first, and where should resources be allocated."
     type: ranking
     choices:
       - 'RST syntax is too complicated'
@@ -218,3 +229,9 @@ questions:
 
   - title: 'If there are any features you wish Sphinx had, what would they be?'
     type: long_text
+
+  - title: 'Thanks for your participation'
+    type: statement
+    description:|
+        Add contact detail again, and maybe link to an open issue people can subscribe on github for when the results will be available. Likely on the typeform repository.
+

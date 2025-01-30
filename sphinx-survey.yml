@@ -1,218 +1,220 @@
-- title: 'Sphinx Usage Survey 2025'
-  type: statement
-  description: | 
-    Sphinx Documentation User Survey 2025
-    
-    Help the Sphinx community understand who is using Sphinx, how they are using it, and how well it supports the people using it. We will use this information to aid community discussion about improvements to Sphinx.
-    
-    Results will be public with identifying information removed. Open text field questions may be quoted, but will not be shown in full. 
-    
-    This survey is run by the Sphinx community; survey data will be deleted from any private accounts once made public. If you have any questions, reach out to [Contact to be determined].
+id: 'Oq55zKog'
+questions:
+  - title: 'Sphinx Usage Survey 2025'
+    type: statement
+    description: |
+      Sphinx Documentation User Survey 2025
 
-- title: 'Tell us about you'
-  description: "First, we'd like to know about how you work and what tools you use."
-  type: statement
+      Help the Sphinx community understand who is using Sphinx, how they are using it, and how well it supports the people using it. We will use this information to aid community discussion about improvements to Sphinx.
 
-- title: 'Which of the following roles is closest to your job?'
-  other: true
-  choices: 
-    - 'Academic researcher'
-    - 'Data scientist'
-    - 'Developer / Programmer'
-    - 'ML engineer / MLOps'
-    - 'Product manager'
-    - 'QA engineer'
-    - 'Technical support'
-    - 'Technical writer'
-    - 'Prefer not to answer'
+      Results will be public with identifying information removed. Open text field questions may be quoted, but will not be shown in full.
 
-- title: 'Do you most often work on a team or independently?'
-  other: true  
-  choices: 
-    - 'I most often work on projects independently'
-    - 'I most often work on projects as part of a team'
-    - 'I spend about equal time working on projects independently as I do on a team'
-    - 'Prefer not to answer'
+      This survey is run by the Sphinx community; survey data will be deleted from any private accounts once made public. If you have any questions, reach out to [Contact to be determined].
 
-- title: 'How many years have you been using Python for?'
-  type: number
+  - title: 'Tell us about you'
+    description: "First, we'd like to know about how you work and what tools you use."
+    type: statement
 
-- title: 'Which Python ecosystem do you feel most aligned with? Select all that apply.'
-  multiple: true
-  other: true
-  choices: 
-    - 'Data Science'
-    - 'Web'
-    - 'Scientific Python'
-    - 'Infrastructure'
-    -  'Prefer not to answer'
+  - title: 'Which of the following roles is closest to your job?'
+    other: true
+    choices:
+      - 'Academic researcher'
+      - 'Data scientist'
+      - 'Developer / Programmer'
+      - 'ML engineer / MLOps'
+      - 'Product manager'
+      - 'QA engineer'
+      - 'Technical support'
+      - 'Technical writer'
+      - 'Prefer not to answer'
 
-- title: 'For how many years have you been using documentation tools?'
-  type: number
+  - title: 'Do you most often work on a team or independently?'
+    other: true
+    choices:
+      - 'I most often work on projects independently'
+      - 'I most often work on projects as part of a team'
+      - 'I spend about equal time working on projects independently as I do on a team'
+      - 'Prefer not to answer'
 
-- title: 'In which of the following contexts do you use documentation tools? Select all that apply.'
-  multiple: true
-  other: true
-  choices: 
-    - 'As a part of my full-time job'
-    - 'As a part of my part-time, contract, or other employment'
-    - 'As a part of a side or non-paid project'
-    - 'I do not use documentation tools'
+  - title: 'How many years have you been using Python for?'
+    type: number
 
-- title: 'How would you identify your role in your documentation-related projects? Select all that apply.'
-  multiple: true
-  other: true
-  choices:
-    - 'Developer'
-    - 'Data scientist'
-    - 'Educator'
-    - 'Technical writer'
-    - 'Community manager'
-    - 'Testing engineer'
-    - 'Extension developer/maintainer'
+  - title: 'Which Python ecosystem do you feel most aligned with? Select all that apply.'
+    multiple: true
+    other: true
+    choices:
+      - 'Data Science'
+      - 'Web'
+      - 'Scientific Python'
+      - 'Infrastructure'
+      -  'Prefer not to answer'
 
-- title: 'What documentation engines do you use? Select all that apply.'
-  multiple: true
-  other: true
-  choices:
-    - 'MyST'
-    - 'Docusaurus'
-    - 'Mkdocs'
-    - 'JupyterBook'
-    - 'Sphinx'
-    - 'None'
-    - 'I don’t know'
+  - title: 'For how many years have you been using documentation tools?'
+    type: number
 
-- title: 'Where do you deploy your documentation pages?'
-  multiple: true
-  other: true
-  choices: 
-    - 'GitHub Pages'
-    - 'Netlify'
+  - title: 'In which of the following contexts do you use documentation tools? Select all that apply.'
+    multiple: true
+    other: true
+    choices:
+      - 'As a part of my full-time job'
+      - 'As a part of my part-time, contract, or other employment'
+      - 'As a part of a side or non-paid project'
+      - 'I do not use documentation tools'
+
+  - title: 'How would you identify your role in your documentation-related projects? Select all that apply.'
+    multiple: true
+    other: true
+    choices:
+      - 'Developer'
+      - 'Data scientist'
+      - 'Educator'
+      - 'Technical writer'
+      - 'Community manager'
+      - 'Testing engineer'
+      - 'Extension developer/maintainer'
+
+  - title: 'What documentation engines do you use? Select all that apply.'
+    multiple: true
+    other: true
+    choices:
+      - 'MyST'
+      - 'Docusaurus'
+      - 'Mkdocs'
+      - 'JupyterBook'
+      - 'Sphinx'
+      - 'None'
+      - 'I don’t know'
+
+  - title: 'Where do you deploy your documentation pages?'
+    multiple: true
+    other: true
+    choices:
+      - 'GitHub Pages'
+      - 'Netlify'
+      - 'Read The Docs'
+      - 'My institution has its own deployment'
+
+  - title: 'What markup language are you using in your documentation?'
+    multiple: true
+    other: true
+    choices:
+      - 'Markdown'
+      - 'RST'
+      - 'I don’t know'
+
+  - title: 'If the programing language you are using supports docstrings, what markup language are you using in your docstrings?'
+    multiple: true
+    other: true
+    choices:
+      - 'Markdown'
+      - 'RST'
+      - 'I don’t know'
+
+  - title: 'Which of the following is most important to you in a documentation site?'
+    multiple: true
+    other: true
+    choices:
+      - 'Ease of use'
+      - 'Performance'
+      - 'Stability'
+      - 'Frequent updates'
+      - 'Variety of features'
+
+  - title: 'Why did you choose the engine you use for your documentation?'
+    multiple: true
+    other: true
+    choices:
+      - 'Ease of use'
+      - 'Performance'
+      - 'Stability'
+      - 'Frequent updates'
+      - 'Variety of features'
+      - 'Other projects in my ecosystem were using it'
+      - 'It was chosen by others on the project'
+
+  - title: 'Do you use Sphinx? (Whether working on the project, using it for another project, or developing Sphinx-extensions)'
+    choices:
+      - 'Yes'
+      - 'No'
+
+  - title: 'If you aren’t using Sphinx for your documentation, please explain why you chose the one you are using'
+    type: long_text
+
+  - title: 'How many years have you been using Sphinx?'
+    type: number
+
+  - title: 'What is the main reason you use Sphinx?'
+    other: true
+    choices:
+      - 'Python API documentation generation (docstrings)'
+      - 'Narrative documentation'
+      - 'Educational materials'
+      - 'Other projects in my ecosystem were using Sphinx'
+      - 'Someone on my team knew how to use Sphinx'
+      - 'I joined a project that was already using Sphinx'
+      - 'Sphinx’s ease of use'
+      - 'Sphinx’s performance'
+      - 'Sphinx’s stability'
+      - 'Sphinx’s release schedule'
+
+  - title: 'Do you follow Sphinx release plans? If so, how? Select all that apply.'
+    multiple: true
+    other: true
+    choices:
+      - 'I do follow Sphinx release plans by following the Sphinx repository on GitHub'
+      - 'I do follow Sphinx release plans by managing Sphinx versions'
+      - 'I do follow Sphinx release plans by setting up CI runs for pre-releases'
+      - 'I don’t follow Sphinx release plans'
+      - 'Prefer not to answer'
+
+  - title: 'Does your project use custom Sphinx extensions?'
+    choices:
+      - 'My project is a custom Sphinx extension(s)'
+      - 'No, my project does not use custom Sphinx extensions'
+      - 'Yes, my project does use custom Sphinx extensions'
+      - 'I don’t know'
+
+  - title: 'What theme(s) do you use? Select all that apply.'
+    multiple: true
+    other: true
+    choices:
+    - 'Whatever comes with Sphinx by default'
+    - 'Alabaster'
     - 'Read The Docs'
-    - 'My institution has its own deployment'
+    - 'Pydata Sphinx Theme'
+    - 'Material design'
+    - 'Something else/I don’t know'
 
-- title: 'What markup language are you using in your documentation?'
-  multiple: true
-  other: true
-  choices: 
-    - 'Markdown'
-    - 'RST'
-    - 'I don’t know'
+  - title: 'What Sphinx output formats do you use the most?'
+    other: true
+    choices:
+      - 'HTML'
+      - 'PDF'
+      - 'EPUB'
 
-- title: 'If the programing language you are using supports docstrings, what markup language are you using in your docstrings?'
-  multiple: true
-  other: true
-  choices: 
-    - 'Markdown'
-    - 'RST'
-    - 'I don’t know'
+  - title: 'How comfortable do you feel when working with docutils?'
+    choices:
+      - 'Very comfortable'
+      - 'Comfortable'
+      - 'Neutral'
+      - 'Uncomfortable'
+      - 'Very uncomfortable'
+      - "I don't know or don't work with docutils"
 
-- title: 'Which of the following is most important to you in a documentation site?'
-  multiple: true
-  other: true
-  choices:
-    - 'Ease of use'
-    - 'Performance'
-    - 'Stability'
-    - 'Frequent updates'
-    - 'Variety of features'
+  - title: 'What is the biggest challenge you face when searching for documentation on Sphinx internals?'
+    type: long_text
 
-- title: 'Why did you choose the engine you use for your documentation?'
-  multiple: true
-  other: true
-  choices:
-    - 'Ease of use'
-    - 'Performance'
-    - 'Stability'
-    - 'Frequent updates'
-    - 'Variety of features'
-    - 'Other projects in my ecosystem were using it'
-    - 'It was chosen by others on the project'
+  - title: 'Please rank the issues you face when working with Sphinx from 1 (least important) to 5 (most important).'
+    type: ranking
+    choices:
+      - 'RST syntax is too complicated'
+      - 'Sphinx is missing features I want'
+      - 'Performance issues'
+      - 'Sphinx breaks too often'
+      - 'No native support for Markdown'
 
-- title: 'Do you use Sphinx? (Whether working on the project, using it for another project, or developing Sphinx-extensions)'
-  choices:
-    - 'Yes'
-    - 'No'
+  - title: 'Are there any other issues you face when working with Sphinx?'
+    type: long_text
 
-- title: 'If you aren’t using Sphinx for your documentation, please explain why you chose the one you are using'
-  type: long_text
-  
-- title: 'How many years have you been using Sphinx?'
-  type: number
-
-- title: 'What is the main reason you use Sphinx?'
-  other: true
-  choices:
-    - 'Python API documentation generation (docstrings)'
-    - 'Narrative documentation'
-    - 'Educational materials'
-    - 'Other projects in my ecosystem were using Sphinx'
-    - 'Someone on my team knew how to use Sphinx'
-    - 'I joined a project that was already using Sphinx'
-    - 'Sphinx’s ease of use'
-    - 'Sphinx’s performance'
-    - 'Sphinx’s stability'
-    - 'Sphinx’s release schedule'
-
-- title: 'Do you follow Sphinx release plans? If so, how? Select all that apply.'
-  multiple: true
-  other: true
-  choices:
-    - 'I do follow Sphinx release plans by following the Sphinx repository on GitHub'
-    - 'I do follow Sphinx release plans by managing Sphinx versions'
-    - 'I do follow Sphinx release plans by setting up CI runs for pre-releases'
-    - 'I don’t follow Sphinx release plans'
-    - 'Prefer not to answer'
-
-- title: 'Does your project use custom Sphinx extensions?'
-  choices:
-    - 'My project is a custom Sphinx extension(s)'
-    - 'No, my project does not use custom Sphinx extensions'
-    - 'Yes, my project does use custom Sphinx extensions'
-    - 'I don’t know'
-
-- title: 'What theme(s) do you use? Select all that apply.'
-  multiple: true
-  other: true
-  choices:
-  - 'Whatever comes with Sphinx by default'
-  - 'Alabaster'
-  - 'Read The Docs'
-  - 'Pydata Sphinx Theme'
-  - 'Material design'
-  - 'Something else/I don’t know'
-
-- title: 'What Sphinx output formats do you use the most?'
-  other: true
-  choices:
-    - 'HTML'
-    - 'PDF'
-    - 'EPUB'
-
-- title: 'How comfortable do you feel when working with docutils?'
-  choices: 
-    - 'Very comfortable'
-    - 'Comfortable'
-    - 'Neutral'
-    - 'Uncomfortable'
-    - 'Very uncomfortable'
-    - 'I don't know or don't work with docutils'
-
-- title: 'What is the biggest challenge you face when searching for documentation on Sphinx internals?'
-  type: long_text
-
-- title: 'Please rank the issues you face when working with Sphinx from 1 (least important) to 5 (most important).'
-  type: ranking
-  choices:
-    - 'RST syntax is too complicated'
-    - 'Sphinx is missing features I want'
-    - 'Performance issues'
-    - 'Sphinx breaks too often'
-    - 'No native support for Markdown'
-
-- title: 'Are there any other issues you face when working with Sphinx?'
-  type: long_text
-
-- title: 'If there are any features you wish Sphinx had, what would they be?'
-  type: long_text
+  - title: 'If there are any features you wish Sphinx had, what would they be?'
+    type: long_text

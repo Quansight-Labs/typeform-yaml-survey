@@ -65,7 +65,6 @@ questions:
       - 'I do not use documentation tools'
 
   - title: 'How would you identify your role in your documentation-related projects?'
-    description: 'Select all that apply'
     multiple: true
     other: true
     choices:

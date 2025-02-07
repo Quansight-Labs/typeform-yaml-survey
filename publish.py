@@ -60,8 +60,9 @@ def parse_question(res):
         prop = {}
         if "ref" in yqu:
             q["ref"] = yqu.pop("ref")
-        if "always_jump_to" in yqu or "otherwise_jump_to":
-            t = yqu.pop("always_jump_to", yqu.pop("otherwise_jump_to"))
+        if "always_jump_to" in yqu or "otherwise_jump_to" in yqu:
+            t = yqu.pop("always_jump_to", yqu.pop("otherwise_jump_to", None))
+            assert t is not None, yqu
             logic.append(simple_always_jump(q["ref"], t))
         if "description" in yqu:
             prop["description"] = yqu.pop("description")
@@ -97,10 +98,12 @@ def parse_question(res):
             jump_from = yqu.pop("jump_from", None)
             if jump_from:
                 logic.append(
-                    simple_no_jump(source=ref, target=jump_to, jump_from=jump_from)
+                    simple_no_jump(
+                        source=ref, target=if_no_jump_to, jump_from=jump_from
+                    )
                 )
             else:
-                logic.append(simple_no_jump(source=ref, target=jump_to))
+                logic.append(simple_no_jump(source=ref, target=if_no_jump_to))
         elif "type" in yqu and yqu["type"] in ("number", "statement"):
             q["type"] = yqu.pop("type")
             q["properties"] = prop

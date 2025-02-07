@@ -1,7 +1,9 @@
 id: 'Oq55zKog'
+title: 'Sphinx Survey Jan 30'
 questions:
   - title: 'Sphinx Usage Survey 2025'
     type: statement
+    ref: intro
     description: |
       Sphinx Documentation User Survey 2025
 
@@ -139,16 +141,19 @@ questions:
       - 'It was chosen by others on the project'
 
   - title: 'Do you use Sphinx? (Whether working on the project, using it for another project, or developing Sphinx-extensions)'
-    choices:
-      - 'Yes'
-      - 'No'
-      - "TODO: matthias write a jump to the end if they reply no."
+    type: 'yes_no_jump'
+    ref: 'use_sphinx'
+    jump_to: arent_sphinx
+    otherwise_jump_to: sphinx_years
 
   - title: 'If you aren’t using Sphinx for your documentation, please explain why you chose the one you are using'
-    matthias: try to put that at the end if peole have answerd no.
+    ref: 'arent_sphinx'
     type: long_text
+    always_jump_to: the_end
+
 
   - title: 'How many years have you been using Sphinx?'
+    ref: sphinx_years
     type: number
 
   - title: 'What is the main reason you use Sphinx?'
@@ -215,7 +220,7 @@ questions:
     type: long_text
 
   - title: 'Please rank the issues you face when working with Sphinx from 1 (most important, I wish this was fixed yesterday) to 5 (least important, this can wait).'
-    description : "That is to say, the issues you'd like to be fixed first, and where should resources be allocated."
+    description: "That is to say, the issues you'd like to be fixed first, and where should resources be allocated."
     type: ranking
     choices:
       - 'RST syntax is too complicated'
@@ -229,9 +234,12 @@ questions:
 
   - title: 'If there are any features you wish Sphinx had, what would they be?'
     type: long_text
+    ref: 'semi_end'
+    always_jump_to: the_end
 
   - title: 'Thanks for your participation'
+    ref: the_end
     type: statement
-    description:|
+    description: |
         Add contact detail again, and maybe link to an open issue people can subscribe on github for when the results will be available. Likely on the typeform repository.
 

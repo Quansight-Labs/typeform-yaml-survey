@@ -142,7 +142,7 @@ questions:
   - title: 'Do you use Sphinx? (Whether working on the project, using it for another project, or developing Sphinx-extensions)'
     type: 'yes_no_jump'
     ref: 'use_sphinx'
-    jump_to: arent_sphinx
+    if_no_jump_to: arent_sphinx
     otherwise_jump_to: sphinx_years
 
   - title: 'If you aren’t using Sphinx for your documentation, please explain why you chose the one you are using'

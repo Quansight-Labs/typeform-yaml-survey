@@ -85,7 +85,7 @@ def parse_question(res):
         elif "type" in yqu and yqu["type"] == "yes_no_jump":
             yqu.pop("type")
             q["type"] = "yes_no"
-            jump_to = yqu.pop("jump_to")
+            if_no_jump_to = yqu.pop("if_no_jump_to")
 
             if q.get("ref", None) is not None:
                 ref = q["ref"]

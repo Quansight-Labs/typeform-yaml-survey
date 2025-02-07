@@ -169,17 +169,6 @@ questions:
       - 'Sphinx’s stability'
       - 'Sphinx’s release schedule'
 
-  - title: 'Do you follow Sphinx release plans? If so, how? Select all that apply.'
-    matthias: "TODO understand this question and see with melissa."
-    multiple: true
-    other: true
-    choices:
-      - 'I do follow Sphinx release plans by following the Sphinx repository on GitHub'
-      - 'I do follow Sphinx release plans by pinning Sphinx versions'
-      - 'I do follow Sphinx release plans by setting up CI runs for pre-releases'
-      - 'I don’t follow Sphinx release plans'
-      - 'Prefer not to answer'
-
   - title: 'Does your project use custom Sphinx extensions?'
     choices:
       - 'My project is a custom Sphinx extension(s)'

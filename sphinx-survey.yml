@@ -222,8 +222,6 @@ questions:
 
   - title: 'If there are any features you wish Sphinx had, what would they be?'
     type: long_text
-    ref: 'semi_end'
-    always_jump_to: the_end
 
   - title: 'Thanks for your participation'
     ref: the_end

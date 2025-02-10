@@ -3,7 +3,6 @@ title: 'Sphinx Survey Jan 30'
 questions:
   - title: 'Sphinx Usage Survey 2025'
     type: statement
-    ref: intro
     description: |
       Sphinx Documentation User Survey 2025
 

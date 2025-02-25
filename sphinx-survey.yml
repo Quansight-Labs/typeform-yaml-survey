@@ -16,6 +16,14 @@ questions:
     description: "First, we'd like to know about how you work and what tools you use."
     type: statement
 
+  - title: 'What is your relation to the Sphinx project?'
+    multiple: true
+    choices:
+      - 'User'
+      - 'Extension author'
+      - 'Theme author'
+      - 'Contributor'
+      
   - title: 'Which of the following roles is closest to your job?'
     other: true
     choices:

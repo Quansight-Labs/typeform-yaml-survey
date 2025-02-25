@@ -19,10 +19,11 @@ questions:
   - title: 'What is your relation to the Sphinx project?'
     multiple: true
     choices:
-      - 'User'
-      - 'Extension author'
-      - 'Theme author'
-      - 'Contributor'
+      - I read documentation that is built with Sphinx
+      - I use Sphinx to build documentation
+      - I build extensions for Sphinx
+      - I maintain a Sphinx theme
+      - I contribute to Sphinx
       
   - title: 'Which of the following roles is closest to your job?'
     other: true

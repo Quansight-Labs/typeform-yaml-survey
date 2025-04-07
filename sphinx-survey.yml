@@ -1,239 +1,319 @@
 id: 'qopPUaaG'
-title: 'Sphinx Survey Jan 30'
+# Copyright (c) 2025, Quansight Inc.
+
+# Survey Objective
+# ================
+#
+# Gain basic insight about Sphinx in the wild; who is using it, for what,
+# with what, and with what priorities? The goal is to augment discussions on
+# features and issues with feedback that # can be followed up on.
+# The survey will not provide prescriptive solutions.
+#
+# Target Audience
+# ================
+#
+# People who interact with documentation, especially those who contribute to
+# or extend documentation. Use of Sphinx is encouraged but not required.
+
+title: "Sphinx Survey 2025"
 questions:
-  - title: 'Sphinx Usage Survey 2025'
-    type: statement
-    description: |
-      Sphinx Documentation User Survey 2025
+- title: "Sphinx Usage Survey 2025"
+  type: statement
+  description: >-
+    Sphinx Documentation User Survey 2025
 
-      Help the Sphinx community understand who is using Sphinx, how they are using it, and how well it supports the people using it. We will use this information to aid community discussion about improvements to Sphinx.
+    Help the Sphinx community understand who is using Sphinx, how they are
+    using it, and how well it supports the people using it. We will use this
+    information to aid community discussion about improvements to Sphinx.
 
-      Results will be public with identifying information removed. Open text field questions may be quoted, but will not be shown in full.
+    Results will be public with identifying information removed. Open text
+    field questions may be quoted, but will not be shown in full.
 
-      This survey is run by the Sphinx community; survey data will be deleted from any private accounts once made public. If you have any questions, reach out to [Contact to be determined].
+    This survey is run by the Sphinx community and Quansight Labs; survey 
+    data will be deleted from any private accounts once made public. If you 
+    have any questions, reach out to tallard@quansight.com and mention 
+    Sphinx Survey 2025 in the subject line.
 
-  - title: 'Tell us about you'
-    description: "First, we'd like to know about how you work and what tools you use."
-    type: statement
+- title: "Tell us about you"
+  description: >-
+    First, we'd like to know about how you work and what tools you use.
+  type: statement
 
-  - title: 'What is your relation to the Sphinx project?'
-    multiple: true
-    choices:
-      - I read documentation that is built with Sphinx
-      - I use Sphinx to build documentation
-      - I build extensions for Sphinx
-      - I maintain a Sphinx theme
-      - I contribute to Sphinx
-      
-  - title: 'Which of the following roles is closest to your job?'
-    other: true
-    choices:
-      - 'Academic researcher'
-      - 'Data scientist'
-      - 'Developer / Programmer'
-      - 'ML engineer / MLOps'
-      - 'Product manager'
-      - 'QA engineer'
-      - 'Technical support'
-      - 'Technical writer'
-      - 'Prefer not to answer'
+# Motivation: Understand how the responder views themself in relation to Sphinx.
+- title: "What is your relation to the Sphinx project?"
+  multiple: true
+  choices:
+  - "I read documentation that is built with Sphinx"
+  - "I use Sphinx to build documentation"
+  - "I build extensions for Sphinx"
+  - "I maintain a Sphinx theme"
+  - "I contribute to Sphinx"
+  - "None of the above"
 
-  - title: 'Do you most often work on a team or independently?'
-    other: true
-    choices:
-      - 'I most often work on projects independently'
-      - 'I most often work on projects as part of a team'
-      - 'I spend about equal time working on projects independently as I do on a team'
-      - 'Prefer not to answer'
+# Motivation: Understand the responder's self-reported background and skills.
+- title: "Which of the following roles is closest to your job?"
+  other: true
+  choices:
+  - "Academic researcher"
+  - "Data scientist"
+  - "Developer / Programmer"
+  - "ML engineer / MLOps"
+  - "Product manager"
+  - "QA engineer"
+  - "Technical support"
+  - "Technical writer"
+  - "Prefer not to answer"
 
-  - title: 'How many years have you been using Python for?'
-    type: number
+# Motivation: Understand the responder's self-reported background and skills.
+- title: "Do you most often work on a team or independently?"
+  other: true
+  choices:
+  - "I most often work on projects independently"
+  - "I most often work on projects as part of a team"
+  - "I spend about equal time working on projects independently as I do on
+    a team"
+  - "Prefer not to answer"
 
-  - title: 'Which Python ecosystem do you feel most aligned with?'
-    multiple: true
-    other: true
-    choices:
-      - 'Data Science'
-      - 'Machine Learning'
-      - 'Web'
-      - 'Scientific Python'
-      - 'Infrastructure'
-      - 'Prefer not to answer'
+# Motivation: Understand the responder's self-reported background and skills.
+- title: "How many years have you been using Python for?"
+  type: number
 
-  - title: 'For how many years have you been using documentation tools?'
-    type: number
+# Motivation: Understand the responder's self-reported background and skills.
+- title: "Which Python ecosystem do you feel most aligned with?"
+  multiple: true
+  other: true
+  choices:
+  - "Data Science"
+  - "Infrastructure"
+  - "Machine Learning"
+  - "Scientific Python"
+  - "Web"
+  - "Prefer not to answer"
 
-  - title: 'In which of the following contexts do you use documentation tools?'
-    multiple: true
-    other: true
-    choices:
-      - 'As a part of my full-time job'
-      - 'As a part of my part-time, contract, or other employment'
-      - 'As a part of a side or non-paid project'
-      - 'I do not use documentation tools'
+# Motivation: Understand the responder's self-reported background and skills.
+- title: "For how many years have you been using documentation tools?"
+  type: number
 
-  - title: 'How would you identify your role in your documentation-related projects?'
-    multiple: true
-    other: true
-    choices:
-      - 'Designer'
-      - 'Developer'
-      - 'Data scientist'
-      - 'Educator'
-      - 'Technical writer'
-      - 'Community manager'
-      - 'Testing engineer'
-      - 'Extension developer/maintainer'
+# Motivation: Understand the responder's self-reported background and skills.
+- title: "In which of the following contexts do you use documentation tools?"
+  multiple: true
+  other: true
+  choices:
+  - "As a part of my full-time job"
+  - "As a part of my part-time, contract, or other employment"
+  - "As a part of a side or non-paid project"
+  - "I do not use documentation tools"
 
-  - title: 'What documentation engines do you use?'
-    multiple: true
-    other: true
-    choices:
-      - 'MyST'
-      - 'Docusaurus'
-      - 'Mkdocs'
-      - 'JupyterBook'
-      - 'Sphinx'
-      - 'None'
-      - 'I don’t know'
+# Motivation: Understand the responder's self-reported background and skills.
+- title: >-
+    How would you identify your role in your documentation-related projects?
+  multiple: true
+  other: true
+  choices:
+  - "Community manager"
+  - "Data scientist"
+  - "Designer"
+  - "Developer"
+  - "Educator"
+  - "Extension developer/maintainer"
+  - "Technical writer"
+  - "Testing engineer"
 
-  - title: 'Where do you deploy your documentation pages?'
-    multiple: true
-    other: true
-    choices:
-      - 'GitHub Pages'
-      - 'Netlify'
-      - 'Read The Docs'
-      - 'My institution has its own deployment'
+# Motivation: Understand the constellation of tools for documentation this responder works with.
+- title: "What documentation engines do you use?"
+  multiple: true
+  other: true
+  choices:
+  - "Astro"
+  - "Docusaurus"
+  - "Eleventy"
+  - "Hugo"
+  - "JupyterBook"
+  - "Mkdocs"
+  - "MyST"
+  - "Nikola"
+  - "Pelican"
+  - "Sphinx"
+  - "None"
+  - "I don’t know"
 
-  - title: 'What markup language are you using in your documentation?'
-    multiple: true
-    other: true
-    choices:
-      - 'Markdown'
-      - 'reStructuredText'
-      - 'I don’t know'
+# Motivation: Understand the constellation of tools for documentation this responder works with.
+- title: "Where do you deploy your documentation pages?"
+  multiple: true
+  other: true
+  choices:
+  - "Cloudflare Pages"
+  - "DigitalOcean"
+  - "GitHub Pages"
+  - "Hetzner"
+  - "Netlify"
+  - "Read The Docs"
+  - "Render"
+  - "Vercel"
+  - "Vultr"
+  - "We have our own deployment"
+  - "As a part of an existing website"
+  - "I don't know"
 
-  - title: 'What markup language are you using in your docstrings?'
-    multiple: true
-    other: true
-    choices:
-      - 'Markdown'
-      - 'reStructuredText'
-      - 'Numpydoc format'
-      - 'Google format'
-      - 'I don’t know'
+# Motivation: Understand the constellation of tools for documentation this responder works with.
+- title: "What markup language are you using in your documentation?"
+  multiple: true
+  other: true
+  choices:
+  - "AsciiDoc"
+  - "Confluence/Jira"
+  - "Markdown - CommonMark"
+  - "Markdown - GitHub Flavored"
+  - "Markdown - MyST"
+  - "reStructuredText"
+  - "TeX"
+  - "XML/DITA"
+  - "I don’t know"
 
+# Motivation: Understand the constellation of tools for documentation this responder works with.
+- title: "Which Python docstring style do you use?"
+  multiple: true
+  other: true
+  choices:
+  - "Google format (indented sections)"
+  - "Markdown"
+  - "Numpydoc format (underlined sections)"
+  - "Sphinx format (reStructuredText)"
+  - "I don’t know"
 
-  - title: 'Which of the following is most important to you in a documentation site?'
-    multiple: true
-    other: true
-    choices:
-      - 'Ease of use'
-      - 'Performance'
-      - 'Stability'
-      - 'Frequent updates'
-      - 'Variety of features'
+# Motivation: Reflect on priorities for documentation in general. 
+- title: >-
+    Which of the following is most important to you in a documentation site?
+  multiple: true
+  other: true
+  choices:
+  - "Ease of use"
+  - "Frequent updates"
+  - "Performance"
+  - "Stability"
+  - "Variety of features"
 
-  - title: 'Why did you choose the engine you use for your documentation?'
-    multiple: true
-    other: true
-    choices:
-      - 'Ease of use'
-      - 'Performance'
-      - 'Stability'
-      - 'Frequent updates'
-      - 'Variety of features'
-      - 'Other projects in my ecosystem were using it'
-      - 'It was chosen by others on the project'
+# Motivation: Reflect on priorities for documentation in general. 
+- title: "Why did you choose the engine you use for your documentation?"
+  multiple: true
+  other: true
+  choices:
+  - "Ease of use"
+  - "Frequent updates"
+  - "Performance"
+  - "Stability"
+  - "Variety of features"
+  - "Other projects in my ecosystem were using it"
+  - "It was chosen by others on the project"
 
-  - title: 'Do you use Sphinx? (Whether working on the project, using it for another project, or developing Sphinx-extensions)'
-    type: 'yes_no_jump'
-    ref: 'use_sphinx'
-    if_no_jump_to: arent_sphinx
-    otherwise_jump_to: sphinx_years
+# Motivation: Use answer to branch survey questions. 
+- title: >-
+    Do you use Sphinx?
+    (Whether working on the project, using it for another project,
+    or developing Sphinx-extensions)
+  type: "yes_no_jump"
+  ref: "use_sphinx"
+  if_no_jump_to: arent_sphinx
+  otherwise_jump_to: sphinx_years
 
-  - title: 'If you aren’t using Sphinx for your documentation, please explain why you chose the one you are using'
-    ref: 'arent_sphinx'
-    type: long_text
-    always_jump_to: the_end
+# Motivation: Gather information on possible motivations for documentation tool selection.
+- title: >-
+    If you aren’t using Sphinx for your documentation, please explain why
+    you chose the one you are using
+  ref: "arent_sphinx"
+  type: long_text
+  always_jump_to: the_end
 
+# Motivation: Understand the responder's self-reported background and skills.
+- title: "How many years have you been using Sphinx?"
+  ref: sphinx_years
+  type: number
 
-  - title: 'How many years have you been using Sphinx?'
-    ref: sphinx_years
-    type: number
+# Motivation: Explore patterns in what people using Sphinx value in it.
+- title: "What is the main reason you use Sphinx?"
+  other: true
+  choices:
+  - "API documentation generation from Python docstrings"
+  - "Being able to cross-reference other pages/sections across one or multiple sites ('intersphinx')"
+  - "Add functionality through extensions"
+  - "Other projects in my ecosystem were using Sphinx"
+  - "Someone on my team knew how to use Sphinx"
+  - "I joined a project that was already using Sphinx"
+  - "Sphinx’s ease of use"
+  - "Sphinx’s performance"
+  - "Sphinx’s stability"
+  - "Sphinx’s release schedule"
 
-  - title: 'What is the main reason you use Sphinx?'
-    other: true
-    choices:
-      - 'Python API documentation generation (docstrings)'
-      - 'Narrative documentation'
-      - 'Educational materials'
-      - 'Other projects in my ecosystem were using Sphinx'
-      - 'Someone on my team knew how to use Sphinx'
-      - 'I joined a project that was already using Sphinx'
-      - 'Sphinx’s ease of use'
-      - 'Sphinx’s performance'
-      - 'Sphinx’s stability'
-      - 'Sphinx’s release schedule'
+# Motivation: Understand the constellation of tools for documentation this responder is around.
+- title: "Does your project use custom Sphinx extensions?"
+  choices:
+  - "My project is a custom Sphinx extension(s)"
+  - "No, my project does not use custom Sphinx extensions"
+  - "Yes, my project does use custom Sphinx extensions"
+  - "I don’t know"
 
-  - title: 'Does your project use custom Sphinx extensions?'
-    choices:
-      - 'My project is a custom Sphinx extension(s)'
-      - 'No, my project does not use custom Sphinx extensions'
-      - 'Yes, my project does use custom Sphinx extensions'
-      - 'I don’t know'
+# Motivation: Understand the constellation of tools for documentation this responder works with.
+- title: "What theme(s) do you use? Select all that apply."
+  multiple: true
+  other: true
+  choices:
+  - "Whatever comes with Sphinx by default"
+  - "Alabaster"
+  - "Furo"
+  - "Material design"
+  - "PyData"
+  - "Python Docs"
+  - "Read The Docs"
+  - "Shibuya"
+  - "Sphinx Awesome"
+  - "Sphinx Book"
+  - "Sphinx Bootstrap"
+  - "Sphinx Immaterial"
+  - "Something else/I don’t know"
 
-  - title: 'What theme(s) do you use? Select all that apply.'
-    multiple: true
-    other: true
-    choices:
-    - 'Whatever comes with Sphinx by default'
-    - 'Alabaster'
-    - 'Read The Docs'
-    - 'Pydata Sphinx Theme'
-    - 'Material design'
-    - 'Something else/I don’t know'
+# Motivation: Explore patterns in Sphinx output priorities. This might be useful for contextualizing other answers.
+- title: "In which formats do you publish your documentation with sphinx?"
+  multiple: true
+  other: true
+  choices:
+  - "EPUB"
+  - "HTML"
+  - "JSON serialisation"
+  - "manual pages (manpages)"
+  - "PDF / LaTeX"
+  - "Plain text"
+  - "Texinfo"
+  - "XML"
 
-  - title: 'In which formats do you publish your documentation with sphinx?'
-    multiple: true
-    other: true
-    choices:
-      - 'HTML'
-      - 'PDF'
-      - 'EPUB'
+# Motivation: Explore patterns in what people using Sphinx struggle with.
+- title: >-
+    Please rank the issues you face when working with Sphinx
+    from 1 (most important, I wish this was fixed yesterday)
+    to 5 (least important, this can wait).
+  description: >-
+    That is to say, the issues you'd like to be fixed first, and where
+    should resources be allocated.
+  type: ranking
+  choices:
+  - "No native support for Markdown"
+  - "Performance issues"
+  - "reStructuredText syntax is too complicated"
+  - "Sphinx breaks too often"
+  - "Sphinx is missing features I want"
 
-  - title: 'How comfortable do you feel when working with docutils?'
-    choices:
-      - 'Very comfortable'
-      - 'Comfortable'
-      - 'Neutral'
-      - 'Uncomfortable'
-      - 'Very uncomfortable'
-      - "I don't know or don't work with docutils"
+# Motivation: Explore patterns in what people using Sphinx struggle with.
+- title: "Are there any other issues you face when working with Sphinx?"
+  type: long_text
 
-  - title: 'What is the biggest challenge you face when searching for documentation on Sphinx internals?'
-    type: long_text
+# Motivation: Explore patterns in what people using Sphinx struggle with. People usually describe problems when they try to explain features.
+- title: "If there are any features you wish Sphinx had, what would they be?"
+  type: long_text
 
-  - title: 'Please rank the issues you face when working with Sphinx from 1 (most important, I wish this was fixed yesterday) to 5 (least important, this can wait).'
-    description: "That is to say, the issues you'd like to be fixed first, and where should resources be allocated."
-    type: ranking
-    choices:
-      - 'reStructuredText syntax is too complicated'
-      - 'Sphinx is missing features I want'
-      - 'Performance issues'
-      - 'Sphinx breaks too often'
-      - 'No native support for Markdown'
-
-  - title: 'Are there any other issues you face when working with Sphinx?'
-    type: long_text
-
-  - title: 'If there are any features you wish Sphinx had, what would they be?'
-    type: long_text
-
-  - title: 'Thanks for your participation'
-    ref: the_end
-    type: statement
-    description: |
-        Add contact detail again, and maybe link to an open issue people can subscribe on github for when the results will be available. Likely on the typeform repository.
-
+- title: "Thank you for participating"
+  ref: the_end
+  type: statement
+  description: >-
+    Survey data will be publicly available once anonymized. For updates, 
+    follow https://github.com/orgs/sphinx-doc/discussions/13331.
+    If you have any questions, reach out to tallard@quansight.com and 
+    mention Sphinx Survey 2025 in the subject line.

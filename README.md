@@ -12,7 +12,7 @@ can't spend an inordinate amount of time making overly complicated surveys.
 You'll find multiple types of questions, usually defined by `type: key`
 
 - Multiple choice questions (single|multiple answers possible is the default).
-- The `other:true` option will add an `Other:` response that lets the user type text when selecting it. Otherwise, just manually add an "Other" choice;
+- The `other:true` option will add an `Other:` response that lets the user type text when selecting it. Otherwise, just manually add an "Other" choice. If you want to change the label of the "Other" choice, navigate to the Typeform survey settings and edit the label in the "Language" tab.
 - `type:statement` (no questions, just a statement with "Continue"
 - `type:number` let you input a free number
 - `opinion_scale` , with 2 or 3 labels (left, [middle], right)

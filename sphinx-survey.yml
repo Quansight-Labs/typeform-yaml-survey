@@ -54,9 +54,7 @@ questions:
   - "Academic researcher"
   - "Data scientist"
   - "Manager"
-  - "ML engineer / MLOps"
   - "Product manager"
-  - "QA engineer"
   - "Software Developer / Programmer / Engineer"
   - "Student (in full-time education)"
   - "Technical support"
@@ -82,15 +80,13 @@ questions:
   multiple: true
   other: true
   choices:
-  - "Academia"
-  - "Analytics / Visualisation"
-  - "Data Science"
+  - "Academia / Research / Research Software"
+  - "Data Science / Analytics"
+  - "Data Visualisation"
   - "Embedded / Hardware"
-  - "Enterprise"
   - "Game Development"
   - "Infrastructure / DevOps"
   - "Machine Learning"
-  - "Mobile Development"
   - "Multimedia / Creative"
   - "Scientific Python"
   - "Web"
@@ -136,11 +132,7 @@ questions:
   - "AsciiDoc"
   - "Astro"
   - "Confluence"
-  - "docfx"
-  - "docsify"
-  - "Doctave"
   - "Docusaurus"
-  - "docz"
   - "Eleventy"
   - "GitBook"
   - "Hugo"
@@ -154,8 +146,6 @@ questions:
   - "readme.com"
   - "Sphinx"
   - "Starlight"
-  - "VitePress"
-  - "Zola"
   - "I don’t know"
 
 - title: "What API reference auto-generation tools do you use?"
@@ -197,9 +187,7 @@ questions:
   - "Hetzner"
   - "Netlify"
   - "Read The Docs"
-  - "Render"
   - "Vercel"
-  - "Vultr"
   - "We don’t publish HTML webpages"
   - "We have our own deployment"
   - "I don’t know"
@@ -221,27 +209,6 @@ questions:
 
 # Motivation: Understand the constellation of tools for documentation this responder works with.
 - title: "Which Python docstring style do you use?"
-  description: >-
-    Select N/A if you don’t use Python or Python docstrings.
-
-    Google-style docstrings look like:
-    ```rst
-    Arguments:
-        my_param (type): description
-    ```
-
-    Numpydoc-style docstrings look like:
-    ```rst
-    Arguments
-    ---------
-    my_param : type
-        description
-    ```
-
-    Sphinx-style docstrings look like:
-    ```rst
-    :param [my_param]: description
-    ```
   multiple: true
   other: true
   choices:
@@ -310,15 +277,12 @@ questions:
     sites ('intersphinx')"
   - "Creating non-HTML output formats"
   - "I joined a project that was already using Sphinx"
-  - "It has native support for documenting multiple languages"
-  - "It's open source / permissively licenced"
-  - "Other projects in my ecosystem were using Sphinx"
-  - "Someone on my team knew how to use Sphinx"
-  - "Sphinx's community and support"
+  - "It has native support for documenting multiple (programming) languages"
+  - "It’s open source / permissively licenced"
+  - "Other projects or team members were using Sphinx"
+  - "Sphinx’s community and support"
   - "Sphinx’s ease of use"
-  - "Sphinx’s performance"
-  - "Sphinx’s release schedule"
-  - "Sphinx’s stability"
+  - "Sphinx’s good performance"
   - "Support for advanced document markup features"
   - "The internationalisation and translation support"
   - "The theme and extension APIs and ecosystem"
@@ -342,12 +306,9 @@ questions:
   - "Whatever comes with Sphinx by default"
   - "Alabaster"
   - "Furo"
-  - "Material design"
   - "PyData"
   - "Python Docs"
   - "Read The Docs"
-  - "Shibuya"
-  - "Sphinx Awesome"
   - "Sphinx Book"
   - "Sphinx Bootstrap"
   - "Sphinx Immaterial"
@@ -387,3 +348,4 @@ questions:
     follow https://github.com/orgs/sphinx-doc/discussions/13331. If you
     have any questions, contact Tania Allard (Director of Quansight Labs)
     at tallard@quansight.com and mention Sphinx Survey 2025 in the subject line.
+    
